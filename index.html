@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="theme-selection">
+        <label for="theme">Choisir un theme</label>
+        <select name="theme" id="theme">
+            <option value="" selected>choisissez</option>
+            <option value="anime">Anime</option>
+            <option value="games">Jeux-Vidéo</option>
+        </select>
+        <button id="theme-choice">Valider</button>
+    </div>
+    <div id="QCM">
+        <p id="question"></p>
+        <div id="reponses">
+            <input type="checkbox" value="0" class="checkbox"><label for="0" class="reponses"></label><br>
+            <input type="checkbox" value="1" class="checkbox"><label for="1" class="reponses"></label><br>
+            <input type="checkbox" value="2" class="checkbox"><label for="2" class="reponses"></label><br>
+            <input type="checkbox" value="3" class="checkbox"><label for="3" class="reponses"></label><br>
+        </div>
+        <button id="next" disabled>Suivant</button>
+    </div>
+    <div id="resultat">
+        <p><span id="score"></span>/10</p>
+        <div id="correction">
+            <p id="corr-question"></p>
+            <ul>
+                <li class="corr-reponses"></li>
+                <li class="corr-reponses"></li>
+                <li class="corr-reponses"></li>
+                <li class="corr-reponses"></li>
+            </ul>
+        </div>
+        <p id="commentaire"></p>
+        <button id="next-corr">suivant</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

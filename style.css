@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#theme-selection{
+    margin-top: 20px;
+}
+#QCM{
+    display: none;
+    flex-direction: column;
+    gap: 100px;
+}
+#reponses input[type="checkbox"]{
+    margin-right: 10px;
+}
+#resultat{
+    display: none;
+}
+.corr-reponses{
+    color: black;
+}
+.red{
+    color: red;
+    font-weight: bold;
+}
+.blue{
+    color: blue;
+    font-weight: bold;
+}
+.green{
+    color: green;
+    font-weight: bold;
+}
